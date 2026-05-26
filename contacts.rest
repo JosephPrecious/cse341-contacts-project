@@ -50,6 +50,20 @@ Content-Type: application/json
 
 ###
 
+### CREATE CONTACT 4
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Brian",
+  "lastName": "Adams",
+  "email": "brian@email.com",
+  "favoriteColor": "Red",
+  "birthday": "1999-11-22"
+}
+
+###
+
 ### UPDATE CONTACT
 PUT http://localhost:3000/contacts/PUT_ID_HERE
 Content-Type: application/json
