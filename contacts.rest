@@ -1,5 +1,68 @@
 ### Get All Contacts
 GET http://localhost:3000/contacts
 
+###
+
 ### Get One Contact
 GET http://localhost:3000/contacts/6a1591a4bac4285a0ea7ae91
+
+###
+
+### CREATE CONTACT 1
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Test",
+  "lastName": "User",
+  "email": "test@email.com",
+  "favoriteColor": "Blue",
+  "birthday": "2000-01-01"
+}
+
+###
+
+### CREATE CONTACT 2
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Alice",
+  "lastName": "Johnson",
+  "email": "alice@email.com",
+  "favoriteColor": "Green",
+  "birthday": "2001-05-10"
+}
+
+###
+
+### CREATE CONTACT 3
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Brian",
+  "lastName": "Adams",
+  "email": "brian@email.com",
+  "favoriteColor": "Red",
+  "birthday": "1999-11-22"
+}
+
+###
+
+### UPDATE CONTACT
+PUT http://localhost:3000/contacts/PUT_ID_HERE
+Content-Type: application/json
+
+{
+  "firstName": "Updated",
+  "lastName": "User",
+  "email": "updated@email.com",
+  "favoriteColor": "Purple",
+  "birthday": "2000-01-01"
+}
+
+###
+
+### DELETE CONTACT
+DELETE http://localhost:3000/contacts/PUT_ID_HERE
